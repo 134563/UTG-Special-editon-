@@ -1,5 +1,5 @@
--- UTG (Special edition)
--- Made by GoldGowd
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -12,27 +12,19 @@ local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
 local Close = Instance.new("TextButton")
 local sonic = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
 local chathax = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
 local Krystaldance = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
 local GaleFighter = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
 local Domainx = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
 local Imagefolder = Instance.new("ImageLabel")
 local Open = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
-local Label = Instance.new("TextLabel")
 local R6 = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
@@ -107,12 +99,10 @@ sonic.Text = "Sonic"
 sonic.TextColor3 = Color3.fromRGB(0, 0, 0)
 sonic.TextSize = 20.000
 
-UICorner.CornerRadius = UDim.new(0, 7)
-UICorner.Parent = sonic
-
 chathax.Name = "chathax"
 chathax.Parent = MainFrame
 chathax.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+chathax.BorderSizePixel = 0
 chathax.Position = UDim2.new(0.167741895, 0, 0.274793357, 0)
 chathax.Size = UDim2.new(0, 200, 0, 50)
 chathax.Font = Enum.Font.SciFi
@@ -120,21 +110,16 @@ chathax.Text = "Chat hack"
 chathax.TextColor3 = Color3.fromRGB(0, 0, 0)
 chathax.TextSize = 20.000
 
-UICorner_2.CornerRadius = UDim.new(0, 7)
-UICorner_2.Parent = chathax
-
 Krystaldance.Name = "Krystaldance"
 Krystaldance.Parent = MainFrame
 Krystaldance.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Krystaldance.BorderSizePixel = 0
 Krystaldance.Position = UDim2.new(0.16774188, 0, 0.427685916, 0)
 Krystaldance.Size = UDim2.new(0, 200, 0, 50)
 Krystaldance.Font = Enum.Font.SciFi
 Krystaldance.Text = "Krystal dance"
 Krystaldance.TextColor3 = Color3.fromRGB(0, 0, 0)
 Krystaldance.TextSize = 20.000
-
-UICorner_3.CornerRadius = UDim.new(0, 7)
-UICorner_3.Parent = Krystaldance
 
 GaleFighter.Name = "GaleFighter"
 GaleFighter.Parent = MainFrame
@@ -147,21 +132,16 @@ GaleFighter.Text = "Gale Fighter"
 GaleFighter.TextColor3 = Color3.fromRGB(0, 0, 0)
 GaleFighter.TextSize = 20.000
 
-UICorner_4.CornerRadius = UDim.new(0, 7)
-UICorner_4.Parent = GaleFighter
-
 Domainx.Name = "Domainx"
 Domainx.Parent = MainFrame
 Domainx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Domainx.BorderSizePixel = 0
 Domainx.Position = UDim2.new(0.167741939, 0, 0.584710717, 0)
 Domainx.Size = UDim2.new(0, 200, 0, 50)
 Domainx.Font = Enum.Font.SciFi
 Domainx.Text = "Domain X"
 Domainx.TextColor3 = Color3.fromRGB(0, 0, 0)
 Domainx.TextSize = 20.000
-
-UICorner_5.CornerRadius = UDim.new(0, 7)
-UICorner_5.Parent = Domainx
 
 Imagefolder.Name = "Image folder"
 Imagefolder.Parent = MainFrame
@@ -174,6 +154,7 @@ Imagefolder.Image = "http://www.roblox.com/asset/?id=8756129246"
 Open.Name = "Open"
 Open.Parent = ScreenGui
 Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BorderSizePixel = 0
 Open.Position = UDim2.new(0.807897568, 0, 0.878489316, 0)
 Open.Size = UDim2.new(0, 137, 0, 50)
 Open.Font = Enum.Font.SciFi
@@ -181,36 +162,19 @@ Open.Text = "Open"
 Open.TextColor3 = Color3.fromRGB(0, 0, 0)
 Open.TextSize = 20.000
 
-UICorner_6.CornerRadius = UDim.new(0, 7)
-UICorner_6.Parent = Open
-
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(119, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(247, 0, 255))}
 UIGradient_2.Parent = Open
-
-Label.Name = "Label"
-Label.Parent = ScreenGui
-Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Label.BackgroundTransparency = 1.000
-Label.BorderSizePixel = 0
-Label.Position = UDim2.new(0.0576307327, 0, 0.935960591, 0)
-Label.Size = UDim2.new(0, 174, 0, 32)
-Label.Font = Enum.Font.SciFi
-Label.Text = "Currently its not done"
-Label.TextColor3 = Color3.fromRGB(0, 0, 0)
-Label.TextSize = 30.000
 
 R6.Name = "R6"
 R6.Parent = ScreenGui
 R6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R6.BorderSizePixel = 0
 R6.Position = UDim2.new(0.807897568, 0, 0.755336583, 0)
 R6.Size = UDim2.new(0, 137, 0, 50)
 R6.Font = Enum.Font.SciFi
 R6.Text = "R6"
 R6.TextColor3 = Color3.fromRGB(0, 0, 0)
 R6.TextSize = 20.000
-
-UICorner_7.CornerRadius = UDim.new(0, 7)
-UICorner_7.Parent = R6
 
 UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(119, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(247, 0, 255))}
 UIGradient_3.Parent = R6
@@ -260,7 +224,7 @@ end
 
 -- Scripts:
 
-local function BCZQV_fake_script() -- Close.LocalScript 
+local function RUPYHNY_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 	local req = require
 	local require = function(obj)
@@ -275,8 +239,8 @@ local function BCZQV_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(BCZQV_fake_script)()
-local function BZMVXPS_fake_script() -- sonic.LocalScript 
+coroutine.wrap(RUPYHNY_fake_script)()
+local function UPGCWES_fake_script() -- sonic.LocalScript 
 	local script = Instance.new('LocalScript', sonic)
 	local req = require
 	local require = function(obj)
@@ -2110,8 +2074,8 @@ local function BZMVXPS_fake_script() -- sonic.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BZMVXPS_fake_script)()
-local function CUBQF_fake_script() -- chathax.LocalScript 
+coroutine.wrap(UPGCWES_fake_script)()
+local function KCRIODZ_fake_script() -- chathax.LocalScript 
 	local script = Instance.new('LocalScript', chathax)
 	local req = require
 	local require = function(obj)
@@ -2126,8 +2090,8 @@ local function CUBQF_fake_script() -- chathax.LocalScript
 		loadstring(game:HttpGet("https://pastebin.com/raw/YH3TDza1",true))()
 	end)
 end
-coroutine.wrap(CUBQF_fake_script)()
-local function XCUF_fake_script() -- Krystaldance.LocalScript 
+coroutine.wrap(KCRIODZ_fake_script)()
+local function YKQCPXN_fake_script() -- Krystaldance.LocalScript 
 	local script = Instance.new('LocalScript', Krystaldance)
 	local req = require
 	local require = function(obj)
@@ -2972,8 +2936,8 @@ local function XCUF_fake_script() -- Krystaldance.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(XCUF_fake_script)()
-local function SGZZRJ_fake_script() -- GaleFighter.LocalScript 
+coroutine.wrap(YKQCPXN_fake_script)()
+local function XYSOVG_fake_script() -- GaleFighter.LocalScript 
 	local script = Instance.new('LocalScript', GaleFighter)
 	local req = require
 	local require = function(obj)
@@ -2988,8 +2952,8 @@ local function SGZZRJ_fake_script() -- GaleFighter.LocalScript
 		loadstring(game:HttpGet("https://pastebin.com/raw/h9y0ZD3c",true))()
 	end)
 end
-coroutine.wrap(SGZZRJ_fake_script)()
-local function ZBVH_fake_script() -- Domainx.LocalScript 
+coroutine.wrap(XYSOVG_fake_script)()
+local function GUOFW_fake_script() -- Domainx.LocalScript 
 	local script = Instance.new('LocalScript', Domainx)
 	local req = require
 	local require = function(obj)
@@ -3004,60 +2968,8 @@ local function ZBVH_fake_script() -- Domainx.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
 	end)
 end
-coroutine.wrap(ZBVH_fake_script)()
-local function SUZKSC_fake_script() -- MainFrame.SmoothDrag 
-	local script = Instance.new('LocalScript', MainFrame)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local Drag = script.Parent.Parent.MainFrame
-	gsCoreGui = game:GetService("CoreGui")
-	gsTween = game:GetService("TweenService")
-	local UserInputService = game:GetService("UserInputService")
-		local dragging
-		local dragInput
-		local dragStart
-		local startPos
-		local function update(input)
-			local delta = input.Position - dragStart
-			local dragTime = 0.04
-			local SmoothDrag = {}
-			SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-			local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
-			dragSmoothFunction:Play()
-		end
-		Drag.InputBegan:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-				dragging = true
-				dragStart = input.Position
-				startPos = Drag.Position
-				input.Changed:Connect(function()
-					if input.UserInputState == Enum.UserInputState.End then
-						dragging = false
-					end
-				end)
-			end
-		end)
-		Drag.InputChanged:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-				dragInput = input
-			end
-		end)
-		UserInputService.InputChanged:Connect(function(input)
-			if input == dragInput and dragging and Drag.Size then
-				update(input)
-			end
-		end)
-	
-end
-coroutine.wrap(SUZKSC_fake_script)()
-local function VMIP_fake_script() -- Open.LocalScript 
+coroutine.wrap(GUOFW_fake_script)()
+local function UDCDS_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 	local req = require
 	local require = function(obj)
@@ -3068,7 +2980,7 @@ local function VMIP_fake_script() -- Open.LocalScript
 		return req(obj)
 	end
 
-	local frame = script.Parent.Parent.MainFrame -- change “Test” to the name of the frane
+	local frame = script.Parent.Parent.MainFrame
 	local open = false
 	
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3078,44 +2990,8 @@ local function VMIP_fake_script() -- Open.LocalScript
 	end)
 	
 end
-coroutine.wrap(VMIP_fake_script)()
-local function GLQOOQ_fake_script() -- Label.Script 
-	local script = Instance.new('Script', Label)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local colorTable = {
-		Color3.fromRGB(254,0,0);
-		Color3.fromRGB(255,127,0);
-		Color3.fromRGB(255,221,1);
-		Color3.fromRGB(0,200,0);
-		Color3.fromRGB(0,160,199);
-		Color3.fromRGB(0,55,230);
-		Color3.fromRGB(129,16,210)
-	}
-	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
-	script.Parent.TextColor3 = colorTable[1]
-	i = 1
-	while true do
-		local tween = game:GetService("TweenService"):Create(script.Parent, info, {TextColor3 = colorTable[i]})
-		tween:Play()
-		repeat wait() until tween.Completed
-		wait(0.1)
-		if i == #colorTable then
-			i = 1
-		else
-			i = i + 1
-		end
-	end
-end
-coroutine.wrap(GLQOOQ_fake_script)()
-local function VQCFW_fake_script() -- R6.LocalScript 
+coroutine.wrap(UDCDS_fake_script)()
+local function GNZWBKE_fake_script() -- R6.LocalScript 
 	local script = Instance.new('LocalScript', R6)
 	local req = require
 	local require = function(obj)
@@ -3130,8 +3006,8 @@ local function VQCFW_fake_script() -- R6.LocalScript
 	script.RemoteEvent:FireServer()
 	end)
 end
-coroutine.wrap(VQCFW_fake_script)()
-local function IDMLBYS_fake_script() -- nil.Script 
+coroutine.wrap(GNZWBKE_fake_script)()
+local function MTAUIWW_fake_script() -- nil.Script 
 	local script = Instance.new('Script', nil)
 	local req = require
 	local require = function(obj)
@@ -3146,4 +3022,4 @@ local function IDMLBYS_fake_script() -- nil.Script
 	require(script.Parent.Parent.R6).load(player.Name)
 	end)
 end
-coroutine.wrap(IDMLBYS_fake_script)()
+coroutine.wrap(MTAUIWW_fake_script)()
